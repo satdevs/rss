@@ -186,7 +186,10 @@ return [
         'skipLog' => [],
         'log' => true,
         'trace' => true,
-        'ignoredDeprecationPaths' => [],
+        'ignoredDeprecationPaths' => [
+			'vendor/cakephp/cakephp/src/Event/EventManager.php',
+			'config\bootstrap.php',
+		],
     ],
 
     /*
@@ -419,12 +422,12 @@ return [
     'Session' => [
         'defaults' => 'php',
     ],
-	
-	
+
+
 	//https://packagist.org/packages/rabp99/cakephp-cors
 	'Cors' => [
 		// My Config
 
-	]	
-	
+	]
+
 ];
